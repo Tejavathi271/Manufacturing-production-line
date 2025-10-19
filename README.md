@@ -8,15 +8,15 @@ Design and implement a system that allows supervisors to:
 4. Log production history for analysis.
 5. Generate performance reports.
 
-###Manufacturing_production_line
--main.py              # Entry point (menu-driven system)</br>
--production_line.py   # ProductionLine class</br>
--supervisor.py        # Supervisor class (manages production lines)</br>
--report.py            # Report generation</br>
--exceptions.py        # Custom exceptions</br>
--utils.py             # Helper utilities (ID generator, validation)</br>
--README.md            # Instructions for students</br>
--Instructions.txt     # Problem statement + workflow</br>
+###Manufacturing_production_line</br>
+-main.py  --Entry point (menu-driven system)</br>
+-production_line.py --ProductionLine class</br>
+-supervisor.py -- Supervisor class (manages production lines)</br>
+-report.py -- Report generation</br>
+-exceptions.py  --Custom exceptions</br>
+-utils.py -- Helper utilities (ID generator, validation)</br>
+-README.md -- Instructions for students</br>
+-Instructions.txt --Problem statement + workflow</br>
 
 ## Step-by-Step Workflow
 1. Create ProductionLine class
