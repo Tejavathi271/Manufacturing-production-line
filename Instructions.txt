@@ -1,0 +1,127 @@
+======================================
+Manufacturing Production Line
+======================================
+
+Domain
+------
+Manufacturing
+
+Problem Statement
+-----------------
+Factories need efficient systems to manage production lines.
+Each production line produces items with a certain capacity.
+Without digital tracking, supervisors struggle to:
+- Monitor production start/stop status
+- Track output accurately
+- Identify bottlenecks or downtime
+- Generate reports on production performance
+
+Objective
+---------
+Design and implement a system that allows supervisors to:
+1. Manage production lines (create, update, remove lines).
+2. Start and stop production lines.
+3. Track real-time production output.
+4. Log production history for analysis.
+5. Generate performance reports.
+
+==========================
+Manufacturing Production Line
+==========================
+
+--------
+Domain
+--------
+Manufacturing
+
+------------------
+Problem Statement
+------------------
+Factories require efficient systems to manage production lines.  
+Manual tracking often leads to errors, downtime, and inefficiencies.
+
+This project will build a Manufacturing Production Line System that:
+a. Stores production line details (ID, name, item, capacity).  
+b. Allows supervisors to start/stop production lines.  
+c. Tracks output per line.  
+d. Generates summary reports (output, efficiency, downtime).
+
+Students will learn:
+--------------------
+- OOP concepts: classes for ProductionLine and Supervisor  
+- Dictionaries & Lists: to store lines and logs  
+- Functions & Methods: for managing lines and production  
+- Exception Handling: invalid operations (e.g., stopping non-running line)  
+- Reports & Summaries: efficiency, downtime  
+- Modular Code Organization  
+
+Step-by-Step Workflow for Students:
+-----------------------------------
+1. Create ProductionLine class → store line details, running status, output.  
+2. Create Supervisor class → manage production lines (add/remove/update).  
+3. Implement methods:
+    add_line()
+    start_line()
+    stop_line()
+    log_output()
+    generate_reports()
+4. Add exception handling: e.g., LineNotFoundError, InvalidOperationError.  
+5. Create main.py with menu-driven system.  
+
+
+Key Features
+------------
+- Production Line Management
+  - Add, update, remove production lines.
+  - Store details: line ID, name, item produced, capacity.
+
+- Production Control
+  - Start/stop production lines.
+  - Record timestamps of start/stop.
+  - Log items produced during runtime.
+
+- Output Tracking
+  - Record quantity produced per line.
+  - Compare actual vs. capacity.
+
+- Reporting
+  - Daily/weekly/monthly output reports.
+  - Line efficiency report (actual vs capacity).
+  - Downtime tracking and summaries.
+
+Actors
+------
+- Supervisor (manages lines, tracks production, views reports)
+- Operator (optional extension: runs assigned lines)
+
+System Requirements
+-------------------
+1. Allow CRUD operations for production lines.
+2. Start/stop production with time logging.
+3. Track production quantities per line.
+4. Generate reports:
+   - Total production per line
+   - Efficiency (actual / capacity * 100%)
+   - Downtime per line
+5. Provide a simple CLI/GUI for interaction.
+
+Validation Rules
+----------------
+- Capacity must be a positive number.
+- Output quantity cannot exceed capacity unless marked as overtime.
+- Cannot start a production line that is already running.
+- Cannot stop a line that is not running.
+
+Reports
+-------
+- Production Output Report: Items produced per line over a time period.
+- Line Efficiency Report: Percentage of capacity achieved.
+- Downtime Report: Time intervals when a line was stopped.
+
+Future Enhancements
+-------------------
+- Integration with IoT sensors for real-time machine data.
+- Automated alerts for underperforming lines.
+- Dashboard visualization with charts.
+- Export reports to Excel/PDF.
+
