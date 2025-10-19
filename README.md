@@ -9,8 +9,8 @@ Design and implement a system that allows supervisors to:
 5. Generate performance reports.
 
 ##manufacturing_production_line
--main.py              # Entry point (menu-driven system)
--production_line.py   # ProductionLine class
+-main.py              # Entry point (menu-driven system)</br>
+-production_line.py   # ProductionLine class</br>
 -supervisor.py        # Supervisor class (manages production lines)
 -report.py            # Report generation
 -exceptions.py        # Custom exceptions
